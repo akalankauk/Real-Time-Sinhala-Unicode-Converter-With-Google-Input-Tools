@@ -1,0 +1,50 @@
+<html>
+<title>Sinhala Unicode Converter - @Akalankauk</title>
+<p>Type Sinhala Unicode Using Google Input Tools</p>
+<td width="460" align="center" valign="top" class="bg-dark">
+<form action="save.asp" method="post" name="txtBox" id="txtBox" target="sidePane">
+<table width="100%" border="0" cellpadding="0" cellspacing="4"><tbody><tr><td align="left">
+<textarea cols="100%" rows="10" name="box1" rows="3" id="box1" onkeyup="startText();startTextSf();">සිංහල අකුරු භාවිතය</textarea>
+</td>
+</tr>
+<tr align="left"><td>
+<textarea cols="100%" rows="10" readonly="" name="box2" id="box2" onclick="$('#box2').select()" style="display:none;"></textarea>
+</td></tr>
+<tr id="sf"><td align="left">
+<script src="convertsys.js"></script> 
+<script src="fontengine.js"></script>
+<textarea cols="100%" rows="10" readonly="" name="box3" id="box3" onclick="$('#box3').select()"></textarea> 
+<script>startTextSf();</script> </td></tr>
+<tr><td align="left">
+ <script language="javascript" type="text/javascript">function cancelForm() {
+			  var userReply=confirm('Are you sure that you want to clear all?')
+			  if (userReply==true) {document.txtBox.box1.value='';document.txtBox.box2.value='';document.txtBox.box3.value=''}
+			  }</script>
+			  <input name="but-cancel" type="button" class="button" id="but-cancel2" value="Convert to Sinhala Font" onclick="startTextSf(); document.getElementById('sf').style.display=''" style="display:none">
+<input name="Submit3" type="button" class="button" id="but-cancel" onclick="cancelForm()" value="Clear All"></td></tr>
+</tbody>
+</table>
+<p>Usage Example: For Adobe Products(Photoshop,After Effect) With DL - Sinhala Fonts Or Any Other Sinhala Fonts.</p>
+</form>
+</td>
+<style>
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+p {
+	color: #0f8dad;
+}
+</style>
+<center><footer>
+<p><a href="https://github.com/akalankauk">By @Akalankauk</a></p>
+<p><a href="https://www.google.lk/inputtools/windows/">Powered By Google Input Tools</a></p>
+</footer></center>
+</html>
